@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página dividida en dos columnas</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="column left">
+            <h2>Word</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="nombreLargo">Nombre Largo</label>
+            <input type="text" id="nombreLargo" name="nombreLargo">
+
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" name="marca">
+
+            <label for="categoria">Categoria</label>
+            <input type="text" id="categoria" name="categoria">
+
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+
+
+            <label for="caracteristicas">Características</label>
+            <textarea id="caracteristicas" name="caracteristicas"></textarea>
+
+            <label for="ventajas">Ventajas</label>
+            <textarea id="ventajas" name="ventajas"></textarea>
+
+            <label for="especificaciones">Especificaciones</label>
+            <textarea id="especificaciones" name="especificaciones"></textarea>
+
+            <button onclick="convertir()">Convertir</button>
+        </div>
+
+
+
+        <div class="column right">
+            <h2>Liferay</h2>
+            <label for="nombre2">names</label>
+            <input type="text" id="nombre2" name="nombre2" readonly>
+
+            <label for="nombreLargo2">longnames</label>
+            <input type="text" id="nombreLargo2" name="nombreLargo2" readonly>
+
+            <label for="descripcion">description</label>
+            <textarea id="descripcion2" name="descripcion2" readonly></textarea>
+
+
+
+            <label for="caracteristicas2">features</label>
+            <textarea id="caracteristicas2" name="caracteristicas2" readonly></textarea>
+
+            <label for="ventajas2">advantages</label>
+            <textarea id="ventajas2" name="ventajas2" readonly></textarea>
+
+            <label for="especificaciones2">specifications</label>
+            <textarea id="especificaciones2" name="especificaciones2" readonly></textarea>
+
+            <label for="especificaciones2">featuredSpecifications</label>
+            <textarea id="featuredSpecifications" name="featuredSpecifications" readonly></textarea>
+
+            <label for="productUrlEs">productUrlEs</label>
+            <input type="text" id="productUrlEs" name="productUrlEs" readonly>
+        </div>
+    </div>
+</body>
+
+</html>
