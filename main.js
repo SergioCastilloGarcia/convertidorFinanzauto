@@ -60,8 +60,7 @@ function getVentajas(texto) {
     const parrafos = partes.map(parte => `<p>${parte}</p>`).join('\n');
 
     // Retornar las secciones con los párrafos en la parte de "es_ES"
-    return `<section class="en_GB">
-    
+    return `<section class="en_GB">   
 </section>
 <section class="es_ES">
 ${parrafos}
@@ -86,7 +85,9 @@ function generarTabla(texto, marca) {
     }).join('\n');
 
     // Retornar el HTML completo con la tabla
-    return `<section class="es_ES">
+    return `<section class="en_GB">   
+</section>
+<section class="es_ES">
     <div class="accordion show-ac">
         <div class="accordion-title df pr-10 cp aic bb-gray2">
             <h4>Especificaciones</h4>
@@ -116,17 +117,19 @@ function getFeatured(texto, marca) {
         const campos = fila.split(/\t/);
 
         // Generar el HTML para cada fila
-        return `     <span class="dfc sb mt-5 mb-5 grid-2 gap-10">
+        return `     <div class="dfc sb mt-5 mb-5 grid-2 gap-10">
          <p class="name">${campos[0]}</p>
          <p class="value mt-0 bold tar">${campos[1]}</p>
-     </span>`;
+     </div>`;
     }).join('\n');
 
     // Retornar el HTML completo con las secciones
-    return `<section class="es_ES">
- <span class="c-info font-14 c-neutral900">
+    return `<section class="en_GB">   
+</section>
+<section class="es_ES">
+ <div class="c-info font-14 c-neutral900">
      ${contenidoHTML}
- </span>
+ </div>
 </section>`;
 }
 
@@ -149,7 +152,6 @@ function getCaracteristicas(texto) {
     // Construir la sección HTML
     return `
 <section class="en_GB">
-
 </section>
 <section class="es_ES">
     <div class="feature-nav">
